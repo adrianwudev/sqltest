@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=<user>
+      - POSTGRES_PASSWORD=<password>
+      - POSTGRES_DB=<db_name>
+    ports:
+      - "<host port>:<docker port>"
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=<email>
+      - PGADMIN_DEFAULT_PASSWORD=<password>
+    ports:
+      - "<host port>:<docker port>"
+#docker-compose config
+#command: docker-compose up --build
