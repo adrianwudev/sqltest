@@ -1,3 +1,4 @@
+```
 project/
 ├── cmd/
 │   └── main.go
@@ -27,3 +28,4 @@ project/
 ├── test/
 ├── Makefile
 └── README.md
+```
